@@ -11,32 +11,44 @@ The purpose of this assignment was to evaluate mulitple different classification
 
 First we had to read the CSV in and clean the data. Then we had to split the data and decide what our target and features would be. The target was loan status so we set that to y. For X we dropped the loan status column and cleaned the rest of the data up with the pd.get_dummies function. 
 
-![](splitdata.PNG)
+![](split data.PNG)
 
 Once the data was split then we could test different models.
+
+**Naive Random Over Sampling**
 
 First we compared two oversampling models.  We used the naive random sampling and the SMOTE algorithm. The naive random oversampling made it both the low and high risk were equal when running the model. This model only led to a 66% accuracy score.  For high risk the precision rate was 1% which is very poor. But the recall rate was higher than low risk which low risk was 54%
 
 
 ![](splitdata2.PNG)
 
-Then we resampled the data using the SMOTE algorithm. Using the SMOTE oversampling model only had a 65% accuracy score which is actually less than the naive oversampling model. The precision and recall results were also similar to the oversampling results. High risk precision was 1% but the low risk recall did improve from 54% to 68%.
+**SMOTE Oversampling** 
+
+We resampled the data using the SMOTE algorithm. Using the SMOTE oversampling model only had a 65% accuracy score which is actually less than the naive oversampling model. The precision and recall results were also similar to the oversampling results. High risk precision was 1% but the low risk recall did improve from 54% to 68%.
 
 ![](naive.PNG)
+
+**Cluster Centroids Undersampling**
 
 Next we used the undersampling model using the cluster centroid algorithm.  This algorithm performed worse than the previous two and only had a 55% accuracy. The precision and recall rates were similar as the above with 1% precision for high risk and low risk recall score fell to 41%.
 
 ![](Underscoring.PNG)
 
+**SMOTEEN Over and Under Sampling**
+
 We also tested the combination (over and under) sampling model as well.  This model had a 65% accuracy score.  The high risk precision score was similar as the other models at 1% and the low risk recall was at 57%. 
 
 ![](combo.PNG)
+
+**Balanced Random Forest Classifer**
 
 Then we tested the Balanced Random Forest Classifier model. This model had a 78% accuracy score which is the highest accuracy score so far. The precision risk score was slightly higher at 3%.  The recall score for low risk increased to 87%. The recall score for high risk also increased to 70%. 
 
 ![](BalancedRainForest.PNG)
 
-Lastly, we tested the Easy Ensemble Model.  This model has a 93% accuracy rate which had the highest accuracy rate of all the models.  The precision rate for high risk was the highest out of all models at 93%.  The recall for both low risk and high risk also increased from previous models. The recall low risk rate was a 94% and for high risk at 92%.
+**Easy Ensemble Adaboost Classifier**
+
+Lastly, we tested the Easy Ensemble Adaboost Classifier Model.  This model has a 93% accuracy rate which had the highest accuracy rate of all the models.  The precision rate for high risk was the highest out of all models at 93%.  The recall for both low risk and high risk also increased from previous models. The recall low risk rate was a 94% and for high risk at 92%.
 
 ![](EasyEnsemble.PNG)
 
@@ -45,7 +57,7 @@ Lastly, we tested the Easy Ensemble Model.  This model has a 93% accuracy rate w
 
 ## Summary: 
 
-After testing 6 different models, the Easy Ensemble Model proved to the best model to predict credit risk. The Easy Ensemble Model had a 93% accuracy rate with an overall precision rate of 99% and an overlal recall rate of 94%. The precision rate for high risk was 9% which was higher than all other models.  The Recall rate for both high risk and low risk was the highest out of all the models. Recall rate for high risk was at 92% and low risk recall rate was 94% which was greater than all other models.  The high risk precision rate is still low causing the F1 score to be only 16% which means exploring other models could be worthwhile. But out of all the models tested, this is the model I'd use to predict credit risk. 
+After testing 6 different models, the Easy Ensemble Adaboost Classifier Model proved to the best model to predict credit risk. The Easy Ensemble Model had a 93% accuracy rate with an overall precision rate of 99% and an overlal recall rate of 94%. The precision rate for high risk was 9% which was higher than all other models.  The Recall rate for both high risk and low risk was the highest out of all the models. Recall rate for high risk was at 92% and low risk recall rate was 94% which was greater than all other models.  The high risk precision rate is still low causing the F1 score to be only 16% which means exploring other models could be worthwhile. But out of all the models tested, this is the model I'd use to predict credit risk. 
 
 ![](winner.PNG)
 
