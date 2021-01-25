@@ -2,7 +2,7 @@
 
 ## Overview of the analysis:
 
-The purpose of this assignment was to evaluate mulitple different classification modules to see if they should be used to predict credit risk.  We used RandomOverSampler, SMOTE, and ClusterCentroids to oversample the data. Then we used SMOTEEN as a combination of over and undersampling the data. Lastly we used BalancedRandomForestClassifier and EasyEnsembleClassifer to help reduce bias. Afer running all these analysis' we evaluated how they performed to see which one would be the best to use to predict credit risk. 
+The purpose of this assignment was to evaluate mulitple different classification modules to see if they should be used to predict credit risk.  We used RandomOverSampler, SMOTE, and ClusterCentroids to oversample the data. Then we used SMOTEEN as a combination of over and undersampling the data. Lastly we used BalancedRandomForestClassifier and EasyEnsembleClassifer to help reduce bias. After running all these analysis' we evaluated how they performed to see which one would be the best to use to predict credit risk. 
 
 
 
@@ -48,15 +48,14 @@ Next we tested the Balanced Random Forest Classifier model. This model had a 78%
 
 * **Easy Ensemble Adaboost Classifier**
 
-Lastly, we tested the Easy Ensemble Adaboost Classifier Model.  This model has a 93% accuracy rate which had the highest accuracy rate of all the models.  The precision rate for high risk was the highest out of all models at 93.  The recall for both low risk and high risk also increased from previous models. The recall low risk rate was a 94% and for high risk at 92%.
+Lastly, we tested the Easy Ensemble Adaboost Classifier Model.  This model has a 93% accuracy rate which had the highest accuracy rate of all the models.  The precision rate for high risk was the highest out of all models at 93%.  The recall for both low risk and high risk also increased from previous models. The recall low risk rate was a 94% and for high risk at 92%.
 
 ![](easyensemble2.PNG)
 
 
 ## Summary: 
 
-After testing 6 different models, the Easy Ensemble Adaboost Classifier Model proved to the best model to predict credit risk. The Easy Ensemble Model had a 93% accuracy rate with an overall precision rate of 99% and an overall recall rate of 94%. The precision rate for high risk was 9% which was higher than all other models.  The recall rate for both high risk and low risk was also the highest out of all the models. Recall rate for high risk was at 92% and low risk recall rate was 94%.  The high risk precision rate is still low at 9% causing the high risk F1 score to be only 16% which means exploring other models could be worthwhile. But out of all the models tested, this is the model I'd choose to predict credit risk. 
-
+After testing 6 different models, the Easy Ensemble Adaboost Classifier Model proved to the best model to predict credit risk. The Easy Ensemble Model had a 93% accuracy rate with an overall precision rate of 99% and an overall recall rate of 94%. The precision rate for high risk was 9% which was higher than all other models.  The recall rate for both high risk and low risk was also the highest out of all the models. Recall rate for high risk was at 92% and low risk recall rate was 94%.  The high risk precision rate is still low at 9% causing the high risk F1 score to be only 16% which means exploring other models could be worthwhile. Overall, this model has high enough accuracy and precision scores that I'd recommend this model to perform credit risk. 
 
 
 
