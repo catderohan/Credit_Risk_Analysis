@@ -57,7 +57,6 @@ Lastly, we tested the Easy Ensemble Adaboost Classifier Model.  This model has a
 
 After testing 6 different models, the Easy Ensemble Adaboost Classifier Model proved to the best model to predict credit risk. The Easy Ensemble Model had a 93% accuracy rate with an overall precision rate of 99% and an overall recall rate of 94%. The precision rate for high risk was 9% which was higher than all other models.  The recall rate for both high risk and low risk was also the highest out of all the models. Recall rate for high risk was at 92% and low risk recall rate was 94%.  The high risk precision rate is still low at 9% causing the high risk F1 score to be only 16% which means exploring other models could be worthwhile. But out of all the models tested, this is the model I'd choose to predict credit risk. 
 
-![](winner.PNG)
 
 
 
