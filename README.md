@@ -50,7 +50,7 @@ Next we tested the Balanced Random Forest Classifier model. This model had a 78%
 
 Lastly, we tested the Easy Ensemble Adaboost Classifier Model.  This model has a 93% accuracy rate which had the highest accuracy rate of all the models.  The precision rate for high risk was the highest out of all models at 93.  The recall for both low risk and high risk also increased from previous models. The recall low risk rate was a 94% and for high risk at 92%.
 
-![](easyEnsemble2.PNG)
+![](easyensemble2.PNG)
 
 
 ## Summary: 
