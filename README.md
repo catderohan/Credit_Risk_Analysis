@@ -36,7 +36,7 @@ Then we tested the Balanced Random Forest Classifier model. This model had a 78%
 
 ![](customer_dataframe.PNG)
 
-Lastly, we tested the Easy Ensemble Model.  This model has a 93% accuracy rate which had the highest accuracy rate of all the models.  The precision rate for high risk was the highest out of all models at 9%.  The recall for both low risk and high risk also increased from previous models. The recall low risk rate was a 94% and for high risk at 92%.
+Lastly, we tested the Easy Ensemble Model.  This model has a 93% accuracy rate which had the highest accuracy rate of all the models.  The precision rate for high risk was the highest out of all models at 93%.  The recall for both low risk and high risk also increased from previous models. The recall low risk rate was a 94% and for high risk at 92%.
 
 ![](customer_dataframe.PNG)
 
@@ -45,4 +45,10 @@ Lastly, we tested the Easy Ensemble Model.  This model has a 93% accuracy rate w
 
 ## Summary: 
 
-After testing 6 different models, the Easy Ensemble Model proved to the best model to predict credit risk. 
+After testing 6 different models, the Easy Ensemble Model proved to the best model to predict credit risk. The Easy Ensemble Model had a 93% accuracy rate with an overall precision rate of 99% and an overlal recall rate of 94%. The precision rate for high risk was 9% which was higher than all other models.  The Recall rate for both high risk and low risk was the highest out of all the models. Recall rate for high risk was at 92% and low risk recall rate was 94% which was greater than all other models.  The high risk precision rate is still low causing the F1 score to be only 16% which means exploring other models could be worthwhile. But out of all the models tested, this is the model I'd use to predict credit risk. 
+
+![](customer_dataframe.PNG)
+
+
+
+
