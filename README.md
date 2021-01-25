@@ -11,7 +11,7 @@ The purpose of this assignment was to evaluate mulitple different classification
 
 First we had to read the CSV in and clean the data. Then we had to split the data and decide what our target and features would be. The target was loan status so we set that to y. For X we dropped the loan status column and cleaned the rest of the data up with the pd.get_dummies function. 
 
-![](split data.PNG)
+![](splitdata.PNG)
 
 Once the data was split then we could test different models.
 
