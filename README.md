@@ -15,38 +15,38 @@ First we had to read the CSV in and clean the data. Then we had to split the dat
 
 Once the data was split then we could test different models.
 
-**Naive Random Over Sampling**
+*  **Naive Random Over Sampling**
 
 First we compared two oversampling models.  We used the naive random sampling and the SMOTE algorithm. The naive random oversampling made it both the low and high risk were equal when running the model. This model only led to a 66% accuracy score.  For high risk the precision rate was 1% which is very poor. The recall rate was extremely low at only 54%
 
 
 ![](splitdata2.PNG)
 
-**SMOTE Oversampling** 
+* **SMOTE Oversampling** 
 
 We resampled the data using the SMOTE algorithm. Using the SMOTE oversampling model only had a 65% accuracy score which is actually less than the naive oversampling model. The precision and recall results were also similar to the oversampling results. High risk precision was 1% but the low risk recall did improve from 54% to 68%.
 
 ![](naive.PNG)
 
-**Cluster Centroids Undersampling**
+* **Cluster Centroids Undersampling**
 
 Next we used the undersampling model using the cluster centroid algorithm.  This algorithm performed worse than the previous two and only had a 55% accuracy. The precision and recall rates were similar as the above with 1% precision for high risk but the low risk recall score fell to 41%.
 
 ![](Underscoring.PNG)
 
-**SMOTEEN Over and Under Sampling**
+* **SMOTEEN Over and Under Sampling**
 
 We also tested the combination (over and under) sampling model as well.  This model had a 65% accuracy score.  The high risk precision score was similar as the other models at 1% and the low risk recall was at 57%. 
 
 ![](combo.PNG)
 
-**Balanced Random Forest Classifer**
+* **Balanced Random Forest Classifer**
 
 Next we tested the Balanced Random Forest Classifier model. This model had a 78% accuracy score which is the highest accuracy score so far. The precision risk score was slightly higher at 3%.  The recall score for low risk increased to 87%. The recall score for high risk also increased to 70%. 
 
 ![](BalancedRainForest.PNG)
 
-**Easy Ensemble Adaboost Classifier**
+* **Easy Ensemble Adaboost Classifier**
 
 Lastly, we tested the Easy Ensemble Adaboost Classifier Model.  This model has a 93% accuracy rate which had the highest accuracy rate of all the models.  The precision rate for high risk was the highest out of all models at 93.  The recall for both low risk and high risk also increased from previous models. The recall low risk rate was a 94% and for high risk at 92%.
 
